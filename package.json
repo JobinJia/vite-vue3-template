@@ -30,6 +30,7 @@
   },
   "dependencies": {
     "alova": "^2.20.0",
+    "lodash-es": "^4.17.21",
     "pinia": "^2.1.7",
     "the-new-css-reset": "^1.11.2",
     "vue": "^3.4.23",
