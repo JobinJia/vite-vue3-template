@@ -1,11 +1,14 @@
-<script setup lang="ts">
-import { storeToRefs } from 'pinia'
+<script lang="ts" setup>
 import { useCounterStore } from '@/stores/counter'
 import MaterialSymbolsAdd from '~icons/material-symbols/add'
+import { storeToRefs } from 'pinia'
 
 const counter = useCounterStore()
 
-const { doubleCount, count } = storeToRefs(counter)
+const {
+  doubleCount,
+  count,
+} = storeToRefs(counter)
 </script>
 
 <template>

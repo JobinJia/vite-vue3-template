@@ -1,12 +1,13 @@
-import { URL, fileURLToPath } from 'node:url'
+import { fileURLToPath, URL } from 'node:url'
 
-import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
 import unoCSS from 'unocss/vite'
+import IconsResolver from 'unplugin-icons/resolver'
 import icons from 'unplugin-icons/vite'
-
 import autoComponents from 'unplugin-vue-components/vite'
+
+import { defineConfig } from 'vite'
 
 // import {
 //   AntDesignVueResolver,
@@ -27,6 +28,9 @@ export default defineConfig({
       dts: true,
       dirs: ['src/components'],
       extensions: ['vue', 'tsx'],
+      resolvers: [
+        IconsResolver(),
+      ],
       // resolvers: [
       // AntDesignVueResolver(),
       // NaiveUiResolver(),
