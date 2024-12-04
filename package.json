@@ -1,9 +1,12 @@
 {
-  "name": "vite-vue3-template",
+  "name": "my-monorepo",
   "type": "module",
   "version": "0.0.0",
   "private": true,
   "packageManager": "pnpm@8.7.0",
+  "workspaces": [
+    "packages/*"
+  ],
   "description": "A vite vue3 typescript template",
   "author": "jobinJia",
   "license": "MIT",
@@ -26,10 +29,10 @@
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "lint:fix": "eslint . --fix",
-    "prepare": "husky"
+    "prepare": "husky",
+    "g-api": "g-api"
   },
   "dependencies": {
-    "alova": "^3.2.6",
     "lodash-es": "^4.17.21",
     "pinia": "^2.2.8",
     "the-new-css-reset": "^1.11.3",
@@ -42,6 +45,7 @@
     "@commitlint/config-conventional": "^19.6.0",
     "@commitlint/types": "^19.5.0",
     "@iconify-json/material-symbols": "^1.2.8",
+    "@jobin/cli": "workspace:*",
     "@rushstack/eslint-patch": "^1.10.4",
     "@tsconfig/node18": "^18.2.4",
     "@types/jsdom": "^21.1.7",

@@ -1,0 +1,13 @@
+{
+  "name": "@jobin/request",
+  "type": "module",
+  "version": "0.0.1",
+  "license": "MIT",
+  "exports": {
+    ".": "./fetch.ts"
+  },
+  "dependencies": {
+    "@alova/mock": "^2.0.10",
+    "alova": "^3.2.6"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@jobin/cli",
+  "type": "module",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "index.ts",
+  "types": "module",
+  "bin": {
+    "g-api": "./bin/index.mjs"
+  },
+  "scripts": {
+    "build": "tsc -b"
+  },
+  "dependencies": {
+    "commander": "^12.1.0",
+    "inquirer": "^9.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0"
+  }
+}

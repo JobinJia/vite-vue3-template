@@ -6,8 +6,9 @@ export default antfu({
   rules: {
     'no-console': 'off',
     'curly': 'off',
-    '@/brace-style': [2, '1tbs', {
-      allowSingleLine: true,
-    }],
+    'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
+  },
+  stylistic: {
+    'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
   },
 })
