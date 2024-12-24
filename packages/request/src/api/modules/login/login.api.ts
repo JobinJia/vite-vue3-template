@@ -1,8 +1,8 @@
-import type { BaseResponse } from 'src/types'
-import type { LoginRequest, LoginResponse } from './login.d'
-import { http } from 'src/fetch'
+import type { BaseResponse } from '../../../types'
+import type { LoginRequest, LoginResponse } from './login'
+import { http } from '../../../fetch'
 
-export const loginApi = {
+export const LoginApi = {
   login: (data: LoginRequest) =>
     http.Post<BaseResponse<LoginResponse>>('/auth/smsLogin', data),
   // Others....

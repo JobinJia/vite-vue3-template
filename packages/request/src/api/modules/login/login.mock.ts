@@ -1,5 +1,5 @@
 import type { MockServerRequest } from '@alova/mock'
-import type { LoginResponse } from './login.d'
+import type { LoginResponse } from './login'
 import { defineMock } from '@alova/mock'
 
 export default defineMock({

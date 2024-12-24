@@ -4,18 +4,23 @@
   "version": "0.0.1",
   "license": "MIT",
   "main": "index.ts",
-  "types": "module",
   "bin": {
-    "g-api": "./bin/index.mjs"
+    "api": "bin/index.mjs"
   },
+  "files": [
+    "bin",
+    "dist"
+  ],
   "scripts": {
-    "build": "tsc -b"
+    "build": "tsup src/index.ts --format esm --dts --clean"
   },
   "dependencies": {
     "commander": "^12.1.0",
     "inquirer": "^9.0.2"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0"
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.2"
   }
 }

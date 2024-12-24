@@ -30,7 +30,8 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "lint:fix": "eslint . --fix",
     "prepare": "husky",
-    "g-api": "g-api"
+    "postinstall": "pnpm run -F @jobin/cli build",
+    "api": "api"
   },
   "dependencies": {
     "lodash-es": "^4.17.21",
@@ -46,6 +47,7 @@
     "@commitlint/types": "^19.5.0",
     "@iconify-json/material-symbols": "^1.2.8",
     "@jobin/cli": "workspace:*",
+    "@jobin/request": "workspace:*",
     "@rushstack/eslint-patch": "^1.10.4",
     "@tsconfig/node18": "^18.2.4",
     "@types/jsdom": "^21.1.7",
@@ -68,7 +70,7 @@
     "lint-staged": "^15.2.10",
     "npm-run-all": "^4.1.5",
     "start-server-and-test": "^2.0.8",
-    "typescript": "~5.7.2",
+    "typescript": "~5.6.2",
     "unocss": "^0.65.0",
     "unplugin-icons": "^0.21.0",
     "unplugin-vue-components": "^0.27.5",

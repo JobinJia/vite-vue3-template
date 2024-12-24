@@ -1,7 +1,7 @@
 import { createAlova } from 'alova'
 import adapterFetch from 'alova/fetch'
 import vueHook from 'alova/vue'
-import { mockAdapter } from 'src/mock'
+import { mockAdapter } from '../mock'
 
 // 创建请求实例
 export const http = createAlova({
@@ -23,3 +23,6 @@ export const http = createAlova({
     }
   },
 })
+
+export * from 'alova/client'
+export * from 'alova/vue'

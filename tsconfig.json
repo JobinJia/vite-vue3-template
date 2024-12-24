@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
-    "module": "NodeNext"
+    "module": "NodeNext",
+    "paths": {
+      "@jobin/request": ["./packages/request/src"]
+    }
   },
   "references": [
     {
