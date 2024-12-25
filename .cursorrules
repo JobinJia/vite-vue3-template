@@ -1,0 +1,57 @@
+{
+  "FrameworkSpecific": {
+    "Cypress": {
+      "structure": ["e2e", "fixtures", "support"]
+    }
+  },
+  "DirectoryStructure": {
+    "packages": ["cli", "request"],
+    "public": true,
+    "src": {
+      "assets": true,
+      "components": true,
+      "composables": true,
+      "directives": true,
+      "router": true,
+      "stores": true,
+      "types": true,
+      "utils": true,
+      "views": true
+    }
+  },
+  "TypeScript": {
+    "use": true,
+    "extend": true
+  },
+  "Vue": {
+    "version": "3",
+    "scriptSetup": true,
+    "Pinia": true,
+    "Router": true,
+    "VueUse": true
+  },
+  "Lodash": {
+    "import": "lodash-es"
+  },
+  "Vite": {
+    "optimizeDeps": {
+      "include": ["vue", "vue-router", "pinia", "lodash-es", "unocss", "@vueuse/core"]
+    }
+  },
+  "CSS": {
+    "framework": "UnoCSS"
+  },
+  "eslint": {
+    "config": "antfu/eslint-config",
+    "use": true
+  },
+  "Icons": {
+    "plugin": "unplugin-icons"
+  },
+  "Alova": {
+    "enabled": true
+  },
+  "pnpm": {
+    "monorepo": true
+  }
+}

@@ -22,8 +22,8 @@
     "dev": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
-    "test:unit": "vitest",
-    "test:e2e": "start-server-and-test preview http://localhost:4173 'cypress run --e2e'",
+    "test": "pnpm -F @jobin/testing test",
+    "test:e2e": "pnpm -F @jobin/testing test:e2e",
     "test:e2e:dev": "start-server-and-test 'vite dev --port 4173' http://localhost:4173 'cypress open --e2e'",
     "build-only": "vite build",
     "type-check": "vue-tsc --noEmit -p tsconfig.vitest.json --composite false",
@@ -31,7 +31,8 @@
     "lint:fix": "eslint . --fix",
     "prepare": "husky",
     "postinstall": "pnpm run -F @jobin/cli build",
-    "api": "api"
+    "api": "api",
+    "test:e2e:ci": "pnpm -F @jobin/testing test:e2e:ci"
   },
   "dependencies": {
     "lodash-es": "^4.17.21",
