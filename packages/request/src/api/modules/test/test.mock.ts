@@ -7,7 +7,6 @@ export default defineMock({
   // eslint-disable-next-line unused-imports/no-unused-vars
   '[POST]/test/example': (params: MockServerRequest): TestResponse => {
     return {
-
     } as TestResponse
   },
 })

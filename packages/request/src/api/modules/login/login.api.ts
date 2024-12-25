@@ -4,6 +4,6 @@ import { http } from '../../../fetch'
 
 export const LoginApi = {
   login: (data: LoginRequest) =>
-    http.Post<BaseResponse<LoginResponse>>('/auth/smsLogin', data),
+    http.Post<BaseResponse<LoginResponse>>('/auth/login', data),
   // Others....
 }
