@@ -5,10 +5,11 @@ export default antfu({
   formatters: true,
   rules: {
     'no-console': 'off',
-    'curly': 'off',
-    'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
+    'curly': ['error', 'all'],
+    'style/brace-style': ['error', '1tbs', { allowSingleLine: false }],
   },
   stylistic: {
-    'style/brace-style': ['error', '1tbs', { allowSingleLine: true }],
+    'curly': ['error', 'all'],
+    'style/brace-style': ['error', '1tbs', { allowSingleLine: false }],
   },
 })
