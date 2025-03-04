@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import { useCounterStore } from '@/stores/counter'
-import MaterialSymbolsAdd from '~icons/material-symbols/add'
 import { storeToRefs } from 'pinia'
+import MaterialSymbolsAdd from '~icons/material-symbols/add'
 
 const counter = useCounterStore()
 

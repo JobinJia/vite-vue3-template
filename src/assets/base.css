@@ -10,3 +10,23 @@ html,
 body {
   height: 100%;
 }
+
+/**
+@font-face {
+  font-family: "CustomFont";
+  src: url("@/assets/YingZhangXingShu-2.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  unicode-range: U+4E00-9FFF; /* 常用汉字的 Unicode 范围 */
+/* } */
+
+/* 使用字体 */
+body {
+  font-family: 'CustomFont', sans-serif;
+  unicode-range: U+4E00-9FFF; /* 常用汉字的 Unicode 范围 */
+}
+
+/* 中文文本使用中文字体 */
+:lang(zh) {
+  font-family: 'CustomFont', 'DefaultFont', Arial, sans-serif;
+}

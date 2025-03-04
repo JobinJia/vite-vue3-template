@@ -16,6 +16,7 @@
     "node": ">= 18.7.1"
   },
   "scripts": {
+    "tauri:dev": "tauri dev",
     "dev": "vite",
     "build": "run-p type-check build-only",
     "preview": "vite preview",
@@ -29,9 +30,12 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@tauri-apps/plugin-dialog": "~2",
     "alova": "^3.2.6",
     "lodash-es": "^4.17.21",
     "pinia": "^2.2.8",
+    "shuimo-ui": "npm:shuimo-ui-nightly@latest",
+    "tdesign-vue-next": "^1.11.1",
     "the-new-css-reset": "^1.11.3",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0"
@@ -41,8 +45,15 @@
     "@commitlint/cli": "^19.6.0",
     "@commitlint/config-conventional": "^19.6.0",
     "@commitlint/types": "^19.5.0",
+    "@iconify-json/flat-color-icons": "^1.2.1",
+    "@iconify-json/fluent-emoji-flat": "^1.2.3",
+    "@iconify-json/ic": "^1.2.2",
     "@iconify-json/material-symbols": "^1.2.8",
+    "@iconify-json/noto": "^1.2.2",
+    "@iconify-json/noto-v1": "^1.2.1",
     "@rushstack/eslint-patch": "^1.10.4",
+    "@tauri-apps/api": "^2.2.0",
+    "@tauri-apps/cli": "^2.2.7",
     "@tsconfig/node18": "^18.2.4",
     "@types/jsdom": "^21.1.7",
     "@types/node": "^22.10.1",
@@ -62,6 +73,7 @@
     "husky": "^9.1.7",
     "jsdom": "^25.0.1",
     "lint-staged": "^15.2.10",
+    "naive-ui": "^2.41.0",
     "npm-run-all": "^4.1.5",
     "start-server-and-test": "^2.0.8",
     "typescript": "~5.7.2",

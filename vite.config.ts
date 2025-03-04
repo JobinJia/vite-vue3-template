@@ -5,8 +5,8 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import unoCSS from 'unocss/vite'
 import IconsResolver from 'unplugin-icons/resolver'
 import icons from 'unplugin-icons/vite'
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 import autoComponents from 'unplugin-vue-components/vite'
-
 import { defineConfig } from 'vite'
 
 // import {
@@ -30,6 +30,7 @@ export default defineConfig({
       extensions: ['vue', 'tsx'],
       resolvers: [
         IconsResolver(),
+        NaiveUiResolver(),
       ],
       // resolvers: [
       // AntDesignVueResolver(),
