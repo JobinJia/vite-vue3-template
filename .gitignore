@@ -27,3 +27,8 @@ coverage
 *.sln
 *.sw?
 .fleet
+
+
+/examples/**/src-tauri/gen/
+/bench/**/src-tauri/gen/
+target/
