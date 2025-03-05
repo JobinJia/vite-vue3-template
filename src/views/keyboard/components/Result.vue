@@ -36,15 +36,15 @@ function gogogo() {
       style="margin-top: 20px" :label-width="100" :model="formValue" size="small"
       label-placement="left" label-align="left"
     >
-      <n-form-item class="w-50%" label="带键位的角色" path="user.name">
+      <n-form-item class="w-80%" label="带键位的角色" path="user.name">
         <n-input v-model:value="formValue.source" disabled placeholder="请从左边勾选" />
       </n-form-item>
-      <n-form-item class="w-50%" label="没键位的角色" path="user.age">
+      <n-form-item class="w-80%" label="没键位的角色" path="user.age">
         <n-input v-model:value="formValue.target" disabled placeholder="请从左边勾选" />
       </n-form-item>
       <n-form-item>
         <n-button type="primary" :disabled="!(formValue.target && formValue.source)" @click="gogogo">
-          确认替换
+          替换键位
         </n-button>
       </n-form-item>
     </n-form>

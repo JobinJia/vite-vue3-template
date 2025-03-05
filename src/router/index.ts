@@ -29,21 +29,21 @@ const router = createRouter({
           },
         },
         {
+          path: 'mac-id',
+          name: 'Mac地址',
+          component: MacIdView,
+          meta: {
+            title: 'Mac ID',
+            icon: FluentEmojiFlatAngryFace,
+          },
+        },
+        {
           path: 'hotkey',
           name: 'Hotkey',
           component: HotkeyView,
           meta: {
             title: '按键',
             icon: FluentEmojiFlatAnguishedFace,
-          },
-        },
-        {
-          path: 'mac-id',
-          name: 'MacId',
-          component: MacIdView,
-          meta: {
-            title: 'Mac ID',
-            icon: FluentEmojiFlatAngryFace,
           },
         },
       ],

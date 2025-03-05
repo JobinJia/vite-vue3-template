@@ -29,6 +29,5 @@ coverage
 .fleet
 
 
-/examples/**/src-tauri/gen/
-/bench/**/src-tauri/gen/
-target/
+src-tauri/gen/
+src-tauri/target/

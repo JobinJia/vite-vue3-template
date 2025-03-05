@@ -1,3 +1,5 @@
 <template>
-  <div>按键页面</div>
+  <div>
+    回头再按，这会儿按不动
+  </div>
 </template>
