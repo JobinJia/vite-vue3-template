@@ -18,6 +18,12 @@ const router = createRouter({
       name: 'Home',
       component: () => import('@/views/Home/HomeView.vue'),
     },
+    {
+      path: '/child/:userId',
+      name: 'Child',
+      props: true,
+      component: () => import('@/views/Child/Child.vue'),
+    },
   ],
 })
 
